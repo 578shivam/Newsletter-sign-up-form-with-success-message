@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(229, 16%, 73%);
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background-color: hsl(234, 29%, 20%);
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+
+      background-color: white;
+      border-radius: 33px;
+      margin: 10vh;
+      padding: 23px 35px 23px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+
+    /*.image-flex{
+      position: relative;
+    left: 27rem;
+    bottom: 28rem;
+    }*/
+    .image-flex img {
+      height: 500px;
+
+    }
+
+    .text-1 {
+      margin-left: 19px;
+    }
+
+    .text-1 h1 {
+      font-size: 3rem;
+
+    }
+
+    .text-1 p {
+      margin-top: 20px;
+      width: 23rem;
+      line-height: 1.4rem;
+      font-size: 15px;
+      color: hsl(235, 18%, 26%);
+    }
+
+    .text-1 li {
+      list-style-image: url(design/icon-list.svg);
+      background: no-repeat;
+      margin-left: 1.4rem;
+      color: hsl(235, 18%, 26%);
+    }
+
+    .text-1 ul {
+      margin-top: 20px;
+
+    }
+
+    .text-1 h3 {
+      font-size: 12px;
+      margin-top: 3rem;
+    }
+
+    .btn input {
+      width: 260px;
+      height: 36px;
+      border-radius: 4px;
+      border: solid 2px gray;
+      margin-bottom: 19px;
+      cursor: pointer;
+      margin-top: 0.4rem;
+      color: hsl(231, 7%, 60%);
+    }
+
+    .button-sumbit button {
+      width: 260px;
+      padding: 12px;
+      background-color: hsl(235, 18%, 26%);
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+      border: salmon;
+    }
+
+    .button-sumbit :hover {
+      background-color: hsl(4, 100%, 67%);
+      box-shadow: 0px 0px 10px tomato;
+    }
+
+    @media (width <600px) {
+      .container {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 1vh;
+        padding: 0px 0px 22px 0px;
+        border-radius: 1px;
+
+      }
+
+      .image-flex img{
+        height: 330px;
+      }
+      .text-1 h1{
+        font-size: 30px;
+        margin-top: 20px;
+      }
+      .text-1 li{
+        margin: 12px;
+      }
+
+
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="top">
+    <div class="container">
+      <div class="text-1">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li> Measuring to ensure updates are a success</li>
+          <li> And much more!</li>
+        </ul>
+        <h3> Email address</h3>
+        <label class="btn">
+          <input type="text" placeholder="email@company.com" name="mail" required>
+        </label>
+        <div class="button-sumbit">
+          <a href="submit.html"><button>Subscribe to monthly newsletter</button></a>
+        </div>
+
+      </div>
+      <div class="image-flex">
+        <picture>
+          <source media="(min-width:600px)" srcset="design/illustration-sign-up-desktop.svg">
+          <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+        </picture>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">shivam kumar</a>.
+  </div>
+</body>
+
+</html>

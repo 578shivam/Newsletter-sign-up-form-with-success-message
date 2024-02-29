@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: hsl(234, 29%, 20%) ;
+            font-family: "Roboto", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+        .top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20vh;
+        }
+        .card{   
+          width: 346px;
+           height: 348px;
+            border-radius: 20px;
+           background-color: white;
+             padding: 36px;
+        }
+        
+        .letter h1{
+            font-size: 50px;
+        }
+        .words{
+            font-size: 16px;
+            margin-top: 20px;
+            color: hsl(235, 18%, 26%);
+            width: 358px;
+        }
+        .button{
+            margin-top: 38px;
+          margin-left: 15px;
+        }
+        .button button{
+            width: 300px;
+            height: 40px;
+            border-radius: 10px;
+            background-color:hsl(235, 18%, 26%);
+            color: hsl(0, 0%, 100%);
+            border: salmon;
+            cursor: pointer;
+        }
+        .button :hover{
+            background-color:hsl(4, 100%, 67%);
+      box-shadow: 0px 0px 10px tomato;
+        }
+  @media (width < 600px) {
+            body{
+                background-color: white;
+            }
+            
+            .letter h1{
+                margin-top: 4rem;
+              margin-left: -19px;
+            }
+            .words p {
+                margin-left: -26px;
+    }
+    .button{
+        margin-top: 10rem;
+        margin-left: -19px;
+    }
+    .button button{
+     height: 50px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="top">
+    <div class="card">
+        <div class="icons">
+            <img src="design/icon-success.svg" alt="">
+        </div>
+        <div class="letter">
+            <h1>
+                Thanks for subscribing!</h1>
+        </div>
+        <div class="words">
+            <p>
+                A confirmation email has been sent to <b>ash@loremcompany.com.</b> 
+                Please open it and click the button inside to confirm your subscription.</p>
+        </div>
+        <div class="button">
+        <a href="index.html"><button>Dismiss message</button></a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
